@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "SoundChanger"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "Change sound for audio or video base on SoundTouch"
 
   # This description is used to generate tags and improve search results.
