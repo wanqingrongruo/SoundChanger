@@ -28,7 +28,7 @@ Pod::Spec.new do |spec|
                     Change sound for audio or video base on SoundTouch. So that We can make the sound interesting
                    DESC
 
-  spec.homepage     = "https://github.com/wanqingrongruo/SoundChanger.git"
+  spec.homepage     = "https://github.com/wanqingrongruo/SoundChanger"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -91,7 +91,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "SoundChanger/Classes/**"
+  spec.source_files  = "SoundChanger/SoundChanger/Classes/**"
   # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
