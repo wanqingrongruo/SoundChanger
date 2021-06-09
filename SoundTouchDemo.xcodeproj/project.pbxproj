@@ -1,0 +1,656 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E0331118266E230E005613A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0331117266E230E005613A9 /* AppDelegate.swift */; };
+		E033111A266E230E005613A9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0331119266E230E005613A9 /* SceneDelegate.swift */; };
+		E033111C266E230E005613A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E033111B266E230E005613A9 /* ViewController.swift */; };
+		E033111F266E230E005613A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E033111D266E230E005613A9 /* Main.storyboard */; };
+		E0331121266E230F005613A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0331120266E230F005613A9 /* Assets.xcassets */; };
+		E0331124266E230F005613A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0331122266E230F005613A9 /* LaunchScreen.storyboard */; };
+		E03315AD266E34D7005613A9 /* XYWAudioFileSoundChanger.m in Sources */ = {isa = PBXBuildFile; fileRef = E03315A3266E34D7005613A9 /* XYWAudioFileSoundChanger.m */; };
+		E03315AE266E34D7005613A9 /* XYWVideoFileSoundChanger.m in Sources */ = {isa = PBXBuildFile; fileRef = E03315A4266E34D7005613A9 /* XYWVideoFileSoundChanger.m */; };
+		E03315AF266E34D7005613A9 /* XYWAudioBufferSoundChanger.mm in Sources */ = {isa = PBXBuildFile; fileRef = E03315A6266E34D7005613A9 /* XYWAudioBufferSoundChanger.mm */; };
+		E0331669266E4246005613A9 /* AudioDecodeOperation.mm in Sources */ = {isa = PBXBuildFile; fileRef = E033163F266E4246005613A9 /* AudioDecodeOperation.mm */; };
+		E033166A266E4246005613A9 /* CAXException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0331642266E4246005613A9 /* CAXException.cpp */; };
+		E033166B266E4246005613A9 /* CADebugPrintf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0331645266E4246005613A9 /* CADebugPrintf.cpp */; };
+		E033166C266E4246005613A9 /* CAStreamBasicDescription.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0331646266E4246005613A9 /* CAStreamBasicDescription.cpp */; };
+		E033166D266E4246005613A9 /* CADebugger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0331647266E4246005613A9 /* CADebugger.cpp */; };
+		E033166E266E4246005613A9 /* TDStretch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E033164A266E4246005613A9 /* TDStretch.cpp */; };
+		E033166F266E4246005613A9 /* RateTransposer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E033164C266E4246005613A9 /* RateTransposer.cpp */; };
+		E0331670266E4246005613A9 /* BPMDetect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E033164F266E4246005613A9 /* BPMDetect.cpp */; };
+		E0331671266E4246005613A9 /* mmx_optimized.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0331651266E4246005613A9 /* mmx_optimized.cpp */; };
+		E0331672266E4246005613A9 /* FIRFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0331653266E4246005613A9 /* FIRFilter.cpp */; };
+		E0331673266E4246005613A9 /* FIFOSampleBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0331657266E4246005613A9 /* FIFOSampleBuffer.cpp */; };
+		E0331674266E4246005613A9 /* sse_optimized.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0331658266E4246005613A9 /* sse_optimized.cpp */; };
+		E0331675266E4246005613A9 /* cpu_detect_x86.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E033165A266E4246005613A9 /* cpu_detect_x86.cpp */; };
+		E0331676266E4246005613A9 /* PeakFinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E033165C266E4246005613A9 /* PeakFinder.cpp */; };
+		E0331677266E4246005613A9 /* AAFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E033165F266E4246005613A9 /* AAFilter.cpp */; };
+		E0331678266E4246005613A9 /* SoundTouch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0331660266E4246005613A9 /* SoundTouch.cpp */; };
+		E0331679266E4246005613A9 /* AudioConvert.mm in Sources */ = {isa = PBXBuildFile; fileRef = E0331663266E4246005613A9 /* AudioConvert.mm */; };
+		E033167A266E4246005613A9 /* AudioSoundTouchOperation.mm in Sources */ = {isa = PBXBuildFile; fileRef = E0331665266E4246005613A9 /* AudioSoundTouchOperation.mm */; };
+		E033167B266E4246005613A9 /* WaveHeader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0331668266E4246005613A9 /* WaveHeader.cpp */; };
+		E033167D266F129E005613A9 /* AudioSoundChanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E033167C266F129E005613A9 /* AudioSoundChanger.swift */; };
+		E0331698266F2867005613A9 /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0331685266F2867005613A9 /* libmp3lame.a */; };
+		E0331699266F2867005613A9 /* AudioEncodeOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E0331688266F2867005613A9 /* AudioEncodeOperation.m */; };
+		E033169A266F2867005613A9 /* libopencore-amrwb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E033168E266F2867005613A9 /* libopencore-amrwb.a */; };
+		E033169B266F2867005613A9 /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E033168F266F2867005613A9 /* libopencore-amrnb.a */; };
+		E033169C266F2867005613A9 /* wav.mm in Sources */ = {isa = PBXBuildFile; fileRef = E0331694266F2867005613A9 /* wav.mm */; };
+		E033169D266F2867005613A9 /* amrFileCodec.mm in Sources */ = {isa = PBXBuildFile; fileRef = E0331695266F2867005613A9 /* amrFileCodec.mm */; };
+		E0331AFF266F44E0005613A9 /* 123.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E0331AFE266F44E0005613A9 /* 123.m4a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E0331114266E230E005613A9 /* SoundTouchDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundTouchDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0331117266E230E005613A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E0331119266E230E005613A9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E033111B266E230E005613A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E033111E266E230E005613A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E0331120266E230F005613A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E0331123266E230F005613A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E0331125266E230F005613A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E033112D266E242A005613A9 /* SoundTouchDemo-Bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SoundTouchDemo-Bridging-header.h"; sourceTree = "<group>"; };
+		E033112F266E25DD005613A9 /* libSoundTouch.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSoundTouch.a; path = SoundTouchDemo/SoundTouch/libSoundTouch.a; sourceTree = "<group>"; };
+		E03315A3266E34D7005613A9 /* XYWAudioFileSoundChanger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYWAudioFileSoundChanger.m; sourceTree = "<group>"; };
+		E03315A4266E34D7005613A9 /* XYWVideoFileSoundChanger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYWVideoFileSoundChanger.m; sourceTree = "<group>"; };
+		E03315A5266E34D7005613A9 /* XYWAudioFileSoundChanger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYWAudioFileSoundChanger.h; sourceTree = "<group>"; };
+		E03315A6266E34D7005613A9 /* XYWAudioBufferSoundChanger.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = XYWAudioBufferSoundChanger.mm; sourceTree = "<group>"; };
+		E03315A8266E34D7005613A9 /* XYWSoundChanger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYWSoundChanger.h; sourceTree = "<group>"; };
+		E03315A9266E34D7005613A9 /* XYWAudioBufferSoundChanger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYWAudioBufferSoundChanger.h; sourceTree = "<group>"; };
+		E03315AA266E34D7005613A9 /* XYWVideoFileSoundChanger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYWVideoFileSoundChanger.h; sourceTree = "<group>"; };
+		E033163D266E4246005613A9 /* CADebugger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADebugger.h; sourceTree = "<group>"; };
+		E033163E266E4246005613A9 /* CAStreamBasicDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAStreamBasicDescription.h; sourceTree = "<group>"; };
+		E033163F266E4246005613A9 /* AudioDecodeOperation.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AudioDecodeOperation.mm; sourceTree = "<group>"; };
+		E0331640266E4246005613A9 /* AudioDecodeOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioDecodeOperation.h; sourceTree = "<group>"; };
+		E0331641266E4246005613A9 /* CADebugPrintf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADebugPrintf.h; sourceTree = "<group>"; };
+		E0331642266E4246005613A9 /* CAXException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAXException.cpp; sourceTree = "<group>"; };
+		E0331643266E4246005613A9 /* CAXException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAXException.h; sourceTree = "<group>"; };
+		E0331644266E4246005613A9 /* CADebugMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADebugMacros.h; sourceTree = "<group>"; };
+		E0331645266E4246005613A9 /* CADebugPrintf.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CADebugPrintf.cpp; sourceTree = "<group>"; };
+		E0331646266E4246005613A9 /* CAStreamBasicDescription.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAStreamBasicDescription.cpp; sourceTree = "<group>"; };
+		E0331647266E4246005613A9 /* CADebugger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CADebugger.cpp; sourceTree = "<group>"; };
+		E0331648266E4246005613A9 /* CAMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAMath.h; sourceTree = "<group>"; };
+		E033164A266E4246005613A9 /* TDStretch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TDStretch.cpp; sourceTree = "<group>"; };
+		E033164B266E4246005613A9 /* FIFOSampleBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIFOSampleBuffer.h; sourceTree = "<group>"; };
+		E033164C266E4246005613A9 /* RateTransposer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RateTransposer.cpp; sourceTree = "<group>"; };
+		E033164D266E4246005613A9 /* FIRFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIRFilter.h; sourceTree = "<group>"; };
+		E033164E266E4246005613A9 /* STTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STTypes.h; sourceTree = "<group>"; };
+		E033164F266E4246005613A9 /* BPMDetect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BPMDetect.cpp; sourceTree = "<group>"; };
+		E0331650266E4246005613A9 /* BPMDetect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPMDetect.h; sourceTree = "<group>"; };
+		E0331651266E4246005613A9 /* mmx_optimized.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mmx_optimized.cpp; sourceTree = "<group>"; };
+		E0331652266E4246005613A9 /* PeakFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeakFinder.h; sourceTree = "<group>"; };
+		E0331653266E4246005613A9 /* FIRFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FIRFilter.cpp; sourceTree = "<group>"; };
+		E0331654266E4246005613A9 /* SoundTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundTouch.h; sourceTree = "<group>"; };
+		E0331655266E4246005613A9 /* soundtouch_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soundtouch_config.h; sourceTree = "<group>"; };
+		E0331656266E4246005613A9 /* FIFOSamplePipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIFOSamplePipe.h; sourceTree = "<group>"; };
+		E0331657266E4246005613A9 /* FIFOSampleBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FIFOSampleBuffer.cpp; sourceTree = "<group>"; };
+		E0331658266E4246005613A9 /* sse_optimized.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sse_optimized.cpp; sourceTree = "<group>"; };
+		E0331659266E4246005613A9 /* AAFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAFilter.h; sourceTree = "<group>"; };
+		E033165A266E4246005613A9 /* cpu_detect_x86.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cpu_detect_x86.cpp; sourceTree = "<group>"; };
+		E033165B266E4246005613A9 /* RateTransposer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RateTransposer.h; sourceTree = "<group>"; };
+		E033165C266E4246005613A9 /* PeakFinder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PeakFinder.cpp; sourceTree = "<group>"; };
+		E033165D266E4246005613A9 /* TDStretch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDStretch.h; sourceTree = "<group>"; };
+		E033165E266E4246005613A9 /* cpu_detect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpu_detect.h; sourceTree = "<group>"; };
+		E033165F266E4246005613A9 /* AAFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AAFilter.cpp; sourceTree = "<group>"; };
+		E0331660266E4246005613A9 /* SoundTouch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SoundTouch.cpp; sourceTree = "<group>"; };
+		E0331662266E4246005613A9 /* AudioDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioDefine.h; sourceTree = "<group>"; };
+		E0331663266E4246005613A9 /* AudioConvert.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AudioConvert.mm; sourceTree = "<group>"; };
+		E0331664266E4246005613A9 /* AudioSoundTouchOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioSoundTouchOperation.h; sourceTree = "<group>"; };
+		E0331665266E4246005613A9 /* AudioSoundTouchOperation.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AudioSoundTouchOperation.mm; sourceTree = "<group>"; };
+		E0331666266E4246005613A9 /* AudioConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioConvert.h; sourceTree = "<group>"; };
+		E0331667266E4246005613A9 /* WaveHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveHeader.h; sourceTree = "<group>"; };
+		E0331668266E4246005613A9 /* WaveHeader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WaveHeader.cpp; sourceTree = "<group>"; };
+		E033167C266F129E005613A9 /* AudioSoundChanger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSoundChanger.swift; sourceTree = "<group>"; };
+		E0331685266F2867005613A9 /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
+		E0331686266F2867005613A9 /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
+		E0331687266F2867005613A9 /* AudioEncodeOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioEncodeOperation.h; sourceTree = "<group>"; };
+		E0331688266F2867005613A9 /* AudioEncodeOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioEncodeOperation.m; sourceTree = "<group>"; };
+		E033168B266F2867005613A9 /* if_rom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_rom.h; sourceTree = "<group>"; };
+		E033168C266F2867005613A9 /* dec_if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dec_if.h; sourceTree = "<group>"; };
+		E033168E266F2867005613A9 /* libopencore-amrwb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrwb.a"; sourceTree = "<group>"; };
+		E033168F266F2867005613A9 /* libopencore-amrnb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrnb.a"; sourceTree = "<group>"; };
+		E0331691266F2867005613A9 /* interf_dec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_dec.h; sourceTree = "<group>"; };
+		E0331692266F2867005613A9 /* interf_enc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_enc.h; sourceTree = "<group>"; };
+		E0331694266F2867005613A9 /* wav.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = wav.mm; sourceTree = "<group>"; };
+		E0331695266F2867005613A9 /* amrFileCodec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = amrFileCodec.mm; sourceTree = "<group>"; };
+		E0331696266F2867005613A9 /* amrFileCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = amrFileCodec.h; sourceTree = "<group>"; };
+		E0331697266F2867005613A9 /* wav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wav.h; sourceTree = "<group>"; };
+		E0331AFE266F44E0005613A9 /* 123.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 123.m4a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E0331111266E230E005613A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E033169A266F2867005613A9 /* libopencore-amrwb.a in Frameworks */,
+				E033169B266F2867005613A9 /* libopencore-amrnb.a in Frameworks */,
+				E0331698266F2867005613A9 /* libmp3lame.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E033110B266E230E005613A9 = {
+			isa = PBXGroup;
+			children = (
+				E0331682266F2867005613A9 /* AudioEncode */,
+				E033163C266E4246005613A9 /* AudioDecode */,
+				E0331661266E4246005613A9 /* AudioSoundTouch */,
+				E0331649266E4246005613A9 /* SoundTouch */,
+				E03315A9266E34D7005613A9 /* XYWAudioBufferSoundChanger.h */,
+				E03315A6266E34D7005613A9 /* XYWAudioBufferSoundChanger.mm */,
+				E03315A5266E34D7005613A9 /* XYWAudioFileSoundChanger.h */,
+				E03315A3266E34D7005613A9 /* XYWAudioFileSoundChanger.m */,
+				E03315A8266E34D7005613A9 /* XYWSoundChanger.h */,
+				E03315AA266E34D7005613A9 /* XYWVideoFileSoundChanger.h */,
+				E03315A4266E34D7005613A9 /* XYWVideoFileSoundChanger.m */,
+				E0331116266E230E005613A9 /* SoundTouchDemo */,
+				E0331115266E230E005613A9 /* Products */,
+				E033112E266E25DD005613A9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E0331115266E230E005613A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E0331114266E230E005613A9 /* SoundTouchDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E0331116266E230E005613A9 /* SoundTouchDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E0331117266E230E005613A9 /* AppDelegate.swift */,
+				E0331119266E230E005613A9 /* SceneDelegate.swift */,
+				E033111B266E230E005613A9 /* ViewController.swift */,
+				E033167C266F129E005613A9 /* AudioSoundChanger.swift */,
+				E033112D266E242A005613A9 /* SoundTouchDemo-Bridging-header.h */,
+				E033111D266E230E005613A9 /* Main.storyboard */,
+				E0331AFE266F44E0005613A9 /* 123.m4a */,
+				E0331120266E230F005613A9 /* Assets.xcassets */,
+				E0331122266E230F005613A9 /* LaunchScreen.storyboard */,
+				E0331125266E230F005613A9 /* Info.plist */,
+			);
+			path = SoundTouchDemo;
+			sourceTree = "<group>";
+		};
+		E033112E266E25DD005613A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E033112F266E25DD005613A9 /* libSoundTouch.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E033163C266E4246005613A9 /* AudioDecode */ = {
+			isa = PBXGroup;
+			children = (
+				E033163D266E4246005613A9 /* CADebugger.h */,
+				E033163E266E4246005613A9 /* CAStreamBasicDescription.h */,
+				E033163F266E4246005613A9 /* AudioDecodeOperation.mm */,
+				E0331640266E4246005613A9 /* AudioDecodeOperation.h */,
+				E0331641266E4246005613A9 /* CADebugPrintf.h */,
+				E0331642266E4246005613A9 /* CAXException.cpp */,
+				E0331643266E4246005613A9 /* CAXException.h */,
+				E0331644266E4246005613A9 /* CADebugMacros.h */,
+				E0331645266E4246005613A9 /* CADebugPrintf.cpp */,
+				E0331646266E4246005613A9 /* CAStreamBasicDescription.cpp */,
+				E0331647266E4246005613A9 /* CADebugger.cpp */,
+				E0331648266E4246005613A9 /* CAMath.h */,
+			);
+			path = AudioDecode;
+			sourceTree = "<group>";
+		};
+		E0331649266E4246005613A9 /* SoundTouch */ = {
+			isa = PBXGroup;
+			children = (
+				E033164A266E4246005613A9 /* TDStretch.cpp */,
+				E033164B266E4246005613A9 /* FIFOSampleBuffer.h */,
+				E033164C266E4246005613A9 /* RateTransposer.cpp */,
+				E033164D266E4246005613A9 /* FIRFilter.h */,
+				E033164E266E4246005613A9 /* STTypes.h */,
+				E033164F266E4246005613A9 /* BPMDetect.cpp */,
+				E0331650266E4246005613A9 /* BPMDetect.h */,
+				E0331651266E4246005613A9 /* mmx_optimized.cpp */,
+				E0331652266E4246005613A9 /* PeakFinder.h */,
+				E0331653266E4246005613A9 /* FIRFilter.cpp */,
+				E0331654266E4246005613A9 /* SoundTouch.h */,
+				E0331655266E4246005613A9 /* soundtouch_config.h */,
+				E0331656266E4246005613A9 /* FIFOSamplePipe.h */,
+				E0331657266E4246005613A9 /* FIFOSampleBuffer.cpp */,
+				E0331658266E4246005613A9 /* sse_optimized.cpp */,
+				E0331659266E4246005613A9 /* AAFilter.h */,
+				E033165A266E4246005613A9 /* cpu_detect_x86.cpp */,
+				E033165B266E4246005613A9 /* RateTransposer.h */,
+				E033165C266E4246005613A9 /* PeakFinder.cpp */,
+				E033165D266E4246005613A9 /* TDStretch.h */,
+				E033165E266E4246005613A9 /* cpu_detect.h */,
+				E033165F266E4246005613A9 /* AAFilter.cpp */,
+				E0331660266E4246005613A9 /* SoundTouch.cpp */,
+			);
+			path = SoundTouch;
+			sourceTree = "<group>";
+		};
+		E0331661266E4246005613A9 /* AudioSoundTouch */ = {
+			isa = PBXGroup;
+			children = (
+				E0331662266E4246005613A9 /* AudioDefine.h */,
+				E0331663266E4246005613A9 /* AudioConvert.mm */,
+				E0331664266E4246005613A9 /* AudioSoundTouchOperation.h */,
+				E0331665266E4246005613A9 /* AudioSoundTouchOperation.mm */,
+				E0331666266E4246005613A9 /* AudioConvert.h */,
+				E0331667266E4246005613A9 /* WaveHeader.h */,
+				E0331668266E4246005613A9 /* WaveHeader.cpp */,
+			);
+			path = AudioSoundTouch;
+			sourceTree = "<group>";
+		};
+		E0331682266F2867005613A9 /* AudioEncode */ = {
+			isa = PBXGroup;
+			children = (
+				E0331683266F2867005613A9 /* AudioToMp3 */,
+				E0331689266F2867005613A9 /* AudioToAmr */,
+			);
+			path = AudioEncode;
+			sourceTree = "<group>";
+		};
+		E0331683266F2867005613A9 /* AudioToMp3 */ = {
+			isa = PBXGroup;
+			children = (
+				E0331684266F2867005613A9 /* lame */,
+				E0331687266F2867005613A9 /* AudioEncodeOperation.h */,
+				E0331688266F2867005613A9 /* AudioEncodeOperation.m */,
+			);
+			path = AudioToMp3;
+			sourceTree = "<group>";
+		};
+		E0331684266F2867005613A9 /* lame */ = {
+			isa = PBXGroup;
+			children = (
+				E0331685266F2867005613A9 /* libmp3lame.a */,
+				E0331686266F2867005613A9 /* lame.h */,
+			);
+			path = lame;
+			sourceTree = "<group>";
+		};
+		E0331689266F2867005613A9 /* AudioToAmr */ = {
+			isa = PBXGroup;
+			children = (
+				E033168A266F2867005613A9 /* opencore-amrwb */,
+				E033168D266F2867005613A9 /* lib */,
+				E0331690266F2867005613A9 /* opencore-amrnb */,
+				E0331693266F2867005613A9 /* amrwapper */,
+			);
+			path = AudioToAmr;
+			sourceTree = "<group>";
+		};
+		E033168A266F2867005613A9 /* opencore-amrwb */ = {
+			isa = PBXGroup;
+			children = (
+				E033168B266F2867005613A9 /* if_rom.h */,
+				E033168C266F2867005613A9 /* dec_if.h */,
+			);
+			path = "opencore-amrwb";
+			sourceTree = "<group>";
+		};
+		E033168D266F2867005613A9 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				E033168E266F2867005613A9 /* libopencore-amrwb.a */,
+				E033168F266F2867005613A9 /* libopencore-amrnb.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		E0331690266F2867005613A9 /* opencore-amrnb */ = {
+			isa = PBXGroup;
+			children = (
+				E0331691266F2867005613A9 /* interf_dec.h */,
+				E0331692266F2867005613A9 /* interf_enc.h */,
+			);
+			path = "opencore-amrnb";
+			sourceTree = "<group>";
+		};
+		E0331693266F2867005613A9 /* amrwapper */ = {
+			isa = PBXGroup;
+			children = (
+				E0331694266F2867005613A9 /* wav.mm */,
+				E0331695266F2867005613A9 /* amrFileCodec.mm */,
+				E0331696266F2867005613A9 /* amrFileCodec.h */,
+				E0331697266F2867005613A9 /* wav.h */,
+			);
+			path = amrwapper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E0331113266E230E005613A9 /* SoundTouchDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0331128266E230F005613A9 /* Build configuration list for PBXNativeTarget "SoundTouchDemo" */;
+			buildPhases = (
+				E0331110266E230E005613A9 /* Sources */,
+				E0331111266E230E005613A9 /* Frameworks */,
+				E0331112266E230E005613A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoundTouchDemo;
+			productName = SoundTouchDemo;
+			productReference = E0331114266E230E005613A9 /* SoundTouchDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E033110C266E230E005613A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					E0331113266E230E005613A9 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = E033110F266E230E005613A9 /* Build configuration list for PBXProject "SoundTouchDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E033110B266E230E005613A9;
+			productRefGroup = E0331115266E230E005613A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E0331113266E230E005613A9 /* SoundTouchDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E0331112266E230E005613A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0331124266E230F005613A9 /* LaunchScreen.storyboard in Resources */,
+				E0331AFF266F44E0005613A9 /* 123.m4a in Resources */,
+				E0331121266E230F005613A9 /* Assets.xcassets in Resources */,
+				E033111F266E230E005613A9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E0331110266E230E005613A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0331677266E4246005613A9 /* AAFilter.cpp in Sources */,
+				E0331679266E4246005613A9 /* AudioConvert.mm in Sources */,
+				E033166B266E4246005613A9 /* CADebugPrintf.cpp in Sources */,
+				E0331669266E4246005613A9 /* AudioDecodeOperation.mm in Sources */,
+				E033111C266E230E005613A9 /* ViewController.swift in Sources */,
+				E0331118266E230E005613A9 /* AppDelegate.swift in Sources */,
+				E033111A266E230E005613A9 /* SceneDelegate.swift in Sources */,
+				E0331672266E4246005613A9 /* FIRFilter.cpp in Sources */,
+				E0331671266E4246005613A9 /* mmx_optimized.cpp in Sources */,
+				E033166A266E4246005613A9 /* CAXException.cpp in Sources */,
+				E0331676266E4246005613A9 /* PeakFinder.cpp in Sources */,
+				E0331670266E4246005613A9 /* BPMDetect.cpp in Sources */,
+				E0331678266E4246005613A9 /* SoundTouch.cpp in Sources */,
+				E033169D266F2867005613A9 /* amrFileCodec.mm in Sources */,
+				E03315AE266E34D7005613A9 /* XYWVideoFileSoundChanger.m in Sources */,
+				E0331699266F2867005613A9 /* AudioEncodeOperation.m in Sources */,
+				E03315AD266E34D7005613A9 /* XYWAudioFileSoundChanger.m in Sources */,
+				E033166F266E4246005613A9 /* RateTransposer.cpp in Sources */,
+				E03315AF266E34D7005613A9 /* XYWAudioBufferSoundChanger.mm in Sources */,
+				E033167D266F129E005613A9 /* AudioSoundChanger.swift in Sources */,
+				E0331674266E4246005613A9 /* sse_optimized.cpp in Sources */,
+				E033167A266E4246005613A9 /* AudioSoundTouchOperation.mm in Sources */,
+				E033166D266E4246005613A9 /* CADebugger.cpp in Sources */,
+				E033167B266E4246005613A9 /* WaveHeader.cpp in Sources */,
+				E0331675266E4246005613A9 /* cpu_detect_x86.cpp in Sources */,
+				E033169C266F2867005613A9 /* wav.mm in Sources */,
+				E0331673266E4246005613A9 /* FIFOSampleBuffer.cpp in Sources */,
+				E033166C266E4246005613A9 /* CAStreamBasicDescription.cpp in Sources */,
+				E033166E266E4246005613A9 /* TDStretch.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E033111D266E230E005613A9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E033111E266E230E005613A9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E0331122266E230F005613A9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0331123266E230F005613A9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E0331126266E230F005613A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E0331127266E230F005613A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E0331129266E230F005613A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5NU9S58W2U;
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/SoundTouch/";
+				INFOPLIST_FILE = SoundTouchDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AudioEncode/AudioToMp3/lame",
+					"$(PROJECT_DIR)/AudioEncode/AudioToAmr/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.roni.SoundTouchDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SoundTouchDemo/SoundTouchDemo-Bridging-header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
+			};
+			name = Debug;
+		};
+		E033112A266E230F005613A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5NU9S58W2U;
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/SoundTouch/";
+				INFOPLIST_FILE = SoundTouchDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AudioEncode/AudioToMp3/lame",
+					"$(PROJECT_DIR)/AudioEncode/AudioToAmr/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.roni.SoundTouchDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SoundTouchDemo/SoundTouchDemo-Bridging-header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E033110F266E230E005613A9 /* Build configuration list for PBXProject "SoundTouchDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0331126266E230F005613A9 /* Debug */,
+				E0331127266E230F005613A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0331128266E230F005613A9 /* Build configuration list for PBXNativeTarget "SoundTouchDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0331129266E230F005613A9 /* Debug */,
+				E033112A266E230F005613A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E033110C266E230E005613A9 /* Project object */;
+}
