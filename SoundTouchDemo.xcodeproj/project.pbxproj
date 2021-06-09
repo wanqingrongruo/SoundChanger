@@ -137,7 +137,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E033110B266E230E005613A9 = {
+		E00E09452670C5C900C43AF1 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				E0331682266F2867005613A9 /* AudioEncode */,
@@ -151,6 +151,14 @@
 				E03315A8266E34D7005613A9 /* XYWSoundChanger.h */,
 				E03315AA266E34D7005613A9 /* XYWVideoFileSoundChanger.h */,
 				E03315A4266E34D7005613A9 /* XYWVideoFileSoundChanger.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E033110B266E230E005613A9 = {
+			isa = PBXGroup;
+			children = (
+				E00E09452670C5C900C43AF1 /* Classes */,
 				E0331116266E230E005613A9 /* SoundTouchDemo */,
 				E0331115266E230E005613A9 /* Products */,
 				E033112E266E25DD005613A9 /* Frameworks */,
@@ -587,8 +595,8 @@
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/AudioEncode/AudioToMp3/lame",
-					"$(PROJECT_DIR)/AudioEncode/AudioToAmr/lib",
+					"$(PROJECT_DIR)/Classes/AudioEncode/AudioToMp3/lame",
+					"$(PROJECT_DIR)/Classes/AudioEncode/AudioToAmr/lib",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.roni.SoundTouchDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -616,8 +624,8 @@
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/AudioEncode/AudioToMp3/lame",
-					"$(PROJECT_DIR)/AudioEncode/AudioToAmr/lib",
+					"$(PROJECT_DIR)/Classes/AudioEncode/AudioToMp3/lame",
+					"$(PROJECT_DIR)/Classes/AudioEncode/AudioToAmr/lib",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.roni.SoundTouchDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
